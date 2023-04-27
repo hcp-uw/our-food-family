@@ -1,9 +1,19 @@
 import React from 'react';
-import {Text} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-const Cat = () => {
-  const name = 'Maru';
-  return <Text>Hello, I am {name}!</Text>;
-};
+export default function App() {
+  return (
+    <View style={styles.container}>
+      {/* Your homepage content goes here bruh */}
+    </View>
+  );
+}
 
-export default Cat;
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});
