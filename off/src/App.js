@@ -1,13 +1,12 @@
-//import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 import { Restaurants } from './components/restaurants';
 import contents from './info';
 
+
 function App() {
   return (
-    <div className='App'>
-
+      <p>Our Food Family</p>
       <button class = "btn">
         <img src= "settings.png" alt = "settings" 
         onClick={ButtonFiller()} width="50" height = "50" color = "none"/>
@@ -39,4 +38,5 @@ function ButtonFiller() {
 function profileButton() {
   console.log("clicked");
 }
+
 export default App;
