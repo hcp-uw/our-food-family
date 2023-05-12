@@ -1,27 +1,33 @@
-import logo from './logo.svg';
-import React from 'react'
 import './App.css';
-//import SearchBar from './components/searchBar'
+import React from 'react';
+import { Restaurants } from './components/restaurants';
+import contents from './info';
 
 
 function App() {
   return (
-    <header>
       <p>Our Food Family</p>
       <button class = "btn">
         <img src= "settings.png" alt = "settings" 
         onClick={ButtonFiller()} width="50" height = "50" color = "none"/>
       </button>
-    </header>
 
-    
+      <button class = "profileBtn" onClick={profileButton}>         Profile         </button>
 
-// not sure what stuff below does but i need it for search bar
-/*
-<div classname='App'>
-  <SearchBar/>
-</div>
-*/
+      {contents.map(contents => (
+        <Restaurants
+          key={contents.id}
+          image={contents.image}
+          name={contents.name}
+          tags={contents.tags}
+          hours={contents.hours}
+          price={contents.price}
+          rating={contents.rating}
+          distance={contents.distance}
+        />
+      ))}
+
+    </div>
   );
 }
 
@@ -29,5 +35,8 @@ function ButtonFiller() {
   console.log("clicked");
 }
 
+function profileButton() {
+  console.log("clicked");
+}
 
 export default App;
