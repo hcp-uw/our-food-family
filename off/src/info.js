@@ -23,6 +23,19 @@ const restaurantData = [
         rating: 94,
         distance: 1.1
     },
+
+    {
+        id: 'kongTofuHouse',
+        name: "Kong Tofu House",
+        tags: "yummy!",
+        image:
+            "https://media-cdn.tripadvisor.com/media/photo-s/18/12/13/09/photo2jpg.jpg",
+        restaurantType: "Korean",
+        price: "$",
+        hours: "10 AM - 9 PM",
+        rating: 92,
+        distance: 1.3
+    },
 ];
 
 export default restaurantData;

@@ -28,6 +28,21 @@
   color: #61dafb;
 }
 
+.btn {
+  background-color: "transparent";
+  position: absolute;
+  top: 0;
+  right: 6rem;
+}
+
+.profileBtn {
+  position: absolute;   
+  top: 20;    
+  right: 0;   
+  width: '70px';   
+  height: '70px'; 
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

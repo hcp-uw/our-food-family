@@ -7,6 +7,14 @@ import contents from './info';
 function App() {
   return (
     <div className='App'>
+
+      <button class = "btn">
+        <img src= "settings.png" alt = "settings" 
+        onClick={ButtonFiller()} width="50" height = "50" color = "none"/>
+      </button>
+
+      <button class = "profileBtn" onClick={profileButton}>         Profile         </button>
+
       {contents.map(contents => (
         <Restaurants
           key={contents.id}
@@ -19,8 +27,16 @@ function App() {
           distance={contents.distance}
         />
       ))}
+
     </div>
   );
 }
 
+function ButtonFiller() {
+  console.log("clicked");
+}
+
+function profileButton() {
+  console.log("clicked");
+}
 export default App;
