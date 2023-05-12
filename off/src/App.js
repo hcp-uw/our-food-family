@@ -9,7 +9,7 @@ function App() {
     <header>
       <p>Our Food Family</p>
       <button class = "btn">
-        <img src= "C:\Users\siyak\Desktop\OFF\settings.png" alt = "settings" 
+        <img src= "settings.png" alt = "settings" 
         onClick={ButtonFiller()} width="50" height = "50" color = "none"/>
       </button>
     </header>
