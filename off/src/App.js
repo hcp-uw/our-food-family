@@ -6,7 +6,7 @@ import contents from './info';
 
 function App() {
   return (
-      <p>Our Food Family</p>
+  <div class = "App">
       <button class = "btn">
         <img src= "settings.png" alt = "settings" 
         onClick={ButtonFiller()} width="50" height = "50" color = "none"/>
